@@ -16,6 +16,7 @@ The full list of algorithms is available in this section.
     - Factorial
     - File searcher problem
     - Febinocci
+    - Febinocci with memoization
 
 ### 2. Data Structures
 
