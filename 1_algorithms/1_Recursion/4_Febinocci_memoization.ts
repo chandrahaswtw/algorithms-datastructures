@@ -12,7 +12,8 @@ const febinocciMemo = (
 
   const feb = febinocciMemo(n - 1, memo) + febinocciMemo(n - 2, memo);
   memo[n] = feb;
+  console.log(feb);
   return feb;
 };
 
-console.log(febinocciMemo(5));
+febinocciMemo(5);
