@@ -12,6 +12,11 @@ The repository is organized into three main sections:
 A comprehensive collection of algorithms implemented from scratch in TypeScript.
 
 The full list of algorithms is available in this section.
+- Recursion
+    - Factorial
+    - Febinocci
+    - Fibonacci with memoization
+    - File searcher problem
 
 ### 2. Data Structures
 
