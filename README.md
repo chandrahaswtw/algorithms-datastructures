@@ -17,6 +17,15 @@ The full list of algorithms is available in this section.
     - File searcher problem
     - Febinocci
     - Febinocci with memoization
+- Search
+    - Linear search
+    - Binary search
+- Sorting
+    - Bubble sort
+    - Quick sort
+    - Merge sort
+    - Insertion sort
+    - Selection sort
 
 ### 2. Data Structures
 

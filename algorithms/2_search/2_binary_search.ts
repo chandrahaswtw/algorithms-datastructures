@@ -11,7 +11,7 @@ This requires the array to be sorted. This is how binary search goes:
 NOTE: Hence it helps to find the element much faster than the linear search, but the array needs to be sorted. This consumes some time. 
 
 ---------------
-Time complexity 
+TIME COMPLEXITY
 ---------------
 
 Best case: O(1) if we find the element in middle.
