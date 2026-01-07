@@ -10,7 +10,7 @@ BUBBLE SORT
 TIME COMPLEXITY
 ---------------
 
-- Best case O(n2) if already been sorted 
+- Best case O(n) if already been sorted 
 - Worst case O(n2) 
 - General case tends to O(n2) 
 */

@@ -25,9 +25,9 @@ The full list of algorithms is available in this section.
     - Quick sort
     - Merge sort
     - Insertion sort
-    - Selection sort
 
 ### 2. Data Structures
+
 
 Core data structures with clean, well-documented TypeScript implementations.
 

@@ -15,7 +15,7 @@ BUBBLE SORT
 TIME COMPLEXITY
 ---------------
 -	Best case: O(nlogn)
--	Worst case: O(n^2)  When we perform on sorted array.
+-	Worst case: O(n^2), When we perform on sorted array.
 -	Avg performance: O(nlogn)
 */
 
