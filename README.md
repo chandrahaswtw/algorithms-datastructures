@@ -27,6 +27,13 @@ The full list of algorithms is available in this section.
     - Insertion sort
 
 ### 2. Data Structures
+- Linked list
+    - Singly linked list
+    - Double linked list
+    - Circular linked list
+- Stack
+- Queue
+- Hash map
 
 
 Core data structures with clean, well-documented TypeScript implementations.

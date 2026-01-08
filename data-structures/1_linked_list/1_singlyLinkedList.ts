@@ -1,11 +1,11 @@
-interface INode<T> {
+interface ISingleNode<T> {
   value: T;
-  next: null | INode<T>;
+  next: null | ISingleNode<T>;
 }
 
 class SinglyLinkedList<T> {
-  head: INode<T> | null = null;
-  tail: INode<T> | null = null;
+  head: ISingleNode<T> | null = null;
+  tail: ISingleNode<T> | null = null;
 
   /**
    *
@@ -14,7 +14,7 @@ class SinglyLinkedList<T> {
    *
    * This generates a new node based on incoming value.
    */
-  generateNode(value: T): INode<T> {
+  generateNode(value: T): ISingleNode<T> {
     return {
       value: value,
       next: null,
@@ -78,7 +78,7 @@ class SinglyLinkedList<T> {
    * @param newValue - THis is the new node that gets inserted after the findVal.
    */
   findAndInsertAfter(targetVal: T, newValue: T) {
-    let targetNode: INode<T> | null;
+    let targetNode: ISingleNode<T> | null;
 
     let currentNode = this.head;
 
@@ -97,9 +97,14 @@ class SinglyLinkedList<T> {
     }
   }
 
+  /**
+   *
+   * @param value - Deletes the value
+   *
+   */
   delete(value: T) {
     //During first iteration, the previous node is null
-    let previousNode: INode<T> | null = null;
+    let previousNode: ISingleNode<T> | null = null;
 
     let currentNode = this.head;
 
