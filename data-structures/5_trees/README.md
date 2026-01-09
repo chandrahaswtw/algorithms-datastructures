@@ -80,6 +80,6 @@ The number of leaves in a tree. This describes how broad the tree is. This descr
 
 Total number of nodes in a tree.
 
-<img src="./images/family.png" width="500" />
+<img src="./images/example.png" width="500" />
 
 
