@@ -72,11 +72,87 @@ class BSNode {
   }
 
   // BFS
-  BFSTraversal() {}
+  BFSTraversal(node: BSNode | null) {
+    if (!node) {
+      return;
+    }
 
-  deleteNode(value: number) {}
+    const result: Array<number | null> = [];
+    const queue: Array<BSNode> = [node];
 
-  maxDepth() {}
+    while (queue.length > 0) {
+      const singleNode = queue.shift()!;
+      result.push(singleNode.value);
+
+      singleNode.left && queue.push(singleNode.left);
+      singleNode.right && queue.push(singleNode.right);
+    }
+
+    return result;
+  }
+
+  getRightSubMinimumNode(node: BSNode): BSNode | undefined {
+    if (!node.right && !node.left) {
+      return node;
+    }
+
+    if (node.left) {
+      return this.getRightSubMinimumNode(node.left);
+    }
+  }
+
+  deleteNode(value: number, node: BSNode = this) {
+    if (!node) {
+      return null;
+    }
+
+    if (node.left && value < node.value!) {
+      node.left = this.deleteNode(value, node.left);
+    } else if (node.right && value > node.value!) {
+      node.right = this.deleteNode(value, node.right);
+    } else {
+      // If no child
+      if (!node.left && !node.right) {
+        return null;
+      }
+
+      //If one child
+      if (!node.left) {
+        return node.right;
+      }
+      if (!node.right) {
+        return node.left;
+      }
+
+      //If both children
+      const rightSubMinimumNode = this.getRightSubMinimumNode(node.right)!;
+      node.value = rightSubMinimumNode.value!;
+      node.right = this.deleteNode(rightSubMinimumNode.value!, node.right);
+    }
+
+    return node;
+  }
+
+  maxDepth(node: BSNode, depth = 0): number {
+    if (!node) {
+      return 0;
+    }
+
+    if (!node.right && !node.left) {
+      return depth;
+    }
+
+    if (node.left && node.right) {
+      return Math.max(
+        this.maxDepth(node.left, depth + 1),
+        this.maxDepth(node.right, depth + 1)
+      );
+    } else if (node.left) {
+      return this.maxDepth(node.left, depth + 1);
+    } else if (node.right) {
+      return this.maxDepth(node.right, depth + 1);
+    }
+  }
 }
 
 class BST {
@@ -103,7 +179,7 @@ class BST {
   }
 
   BFSTraversal() {
-    this.rootNode.BFSTraversal();
+    return this.rootNode.BFSTraversal(this.rootNode);
   }
 
   deleteNode(value: number) {
@@ -111,7 +187,7 @@ class BST {
   }
 
   maxDepth() {
-    return this.rootNode.maxDepth();
+    return this.rootNode.maxDepth(this.rootNode);
   }
 }
 
@@ -126,6 +202,10 @@ bst.addNode(6);
 bst.addNode(24);
 
 // Traverse nodes
-//bst.inorderTraversal();
+// bst.inorderTraversal();
 //bst.preOrderTraversal();
-bst.postOrderTraversal();
+// bst.postOrderTraversal();
+// bst.deleteNode(5);
+// bst.inorderTraversal();
+
+console.log(bst.maxDepth());
