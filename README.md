@@ -43,9 +43,6 @@ The full list of data structures is available in this section.
 
 A curated set of problems to reinforce concepts through hands-on practice.
 
-The full list of problems is available in this section.
-
-
 
 # Algorithm Complexity Guide (Time & Space)
 
