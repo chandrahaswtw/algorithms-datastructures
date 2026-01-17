@@ -1,9 +1,17 @@
 /*
-Problem statement: Given an array, return true if any value appears atleast twice in the array. Return false if all are distinct.
+-----------------
+Problem statement
+-----------------
 
-Hint:
+Given an array, return true if any value appears atleast twice in the array. Return false if all are distinct.
+
+-----------
+Explanation
+-----------
+
 - We declare an object (Hashmap), and we iterate over the array.
 - The moment it finds the duplicate key it returns true else false.
+
 */
 
 const containsDuplicate = (nums: Array<number>) => {

@@ -1,8 +1,14 @@
 /*
-Problem statement: Find all possible substrings from the given string. For example if abc is given, it should return:
+-----------------
+Problem statement
+-----------------
+
+Find all possible substrings from the given string. For example if abc is given, it should return:
 abc, ab, ac, bc, a, b, c, ''
 
-Hint:
+-----------
+Explanation
+-----------
 
 Consider the string abc.
 
