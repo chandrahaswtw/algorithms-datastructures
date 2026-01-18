@@ -1,14 +1,12 @@
 /*
 -----------------
-Problem statement
+FIND SUBSTRINGS
 -----------------
 
 Find all possible substrings from the given string. For example if abc is given, it should return:
 abc, ab, ac, bc, a, b, c, ''
 
------------
-Explanation
------------
+The explanation is as below:
 
 Consider the string abc.
 

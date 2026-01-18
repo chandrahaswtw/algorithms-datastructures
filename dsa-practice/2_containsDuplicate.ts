@@ -1,12 +1,12 @@
 /*
 -----------------
-Problem statement
+PROBLEM STATEMENT
 -----------------
 
 Given an array, return true if any value appears atleast twice in the array. Return false if all are distinct.
 
 -----------
-Explanation
+EXPLANATION
 -----------
 
 - We declare an object (Hashmap), and we iterate over the array.

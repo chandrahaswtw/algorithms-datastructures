@@ -1,28 +1,37 @@
 /*
+-------------
+FILE SEARCHER
+-------------
+
 Collect all the files from the internal folders:
     -   The files array consists of all the files to be collected.
     -   This array may exist any deep within the object structure.
 
-    {
-        "documents": {
-            "files": ["one.ts", "two.ts"]
+  {
+    documents: {
+      files: ["one.ts", "two.ts"],
+      name: "Mumbai",
+    },
+    work: {
+      documents: {
+        files: ["three.ts", "four.py"],
+        folder: {
+          files: ["five.ts", "six.py"],
         },
-        "work": {
-            "documents": {
-            "files": ["three.ts", "four.py"]
-            },
-            "folder": {
-            "project": {
-                "files": ["five.js", "six.py"]
-            }
-            },
-            "files": ["seven.php", "eight.php"]
+        place: "Ahemdabad",
+      },
+      folder: {
+        project: {
+          files: ["seven.js", "eight.py"],
         },
-        "home": {
-            "files": ["nine.js", "ten.ts"]
-        },
-        "files": ["eleven.py", "twelve.php"]
-    }
+      },
+      files: ["nine.php", "ten.php"],
+    },
+    home: {
+      files: ["eleven.js", "twelve.ts"],
+    },
+    files: ["thirteen.py", "fourteen.php"],
+  }
 */
 
 const fileSearcher = (data: any, files: string[] = []) => {
@@ -47,19 +56,22 @@ const searchObject = {
   work: {
     documents: {
       files: ["three.ts", "four.py"],
+      folder: {
+        files: ["five.ts", "six.py"],
+      },
       place: "Ahemdabad",
     },
     folder: {
       project: {
-        files: ["five.js", "six.py"],
+        files: ["seven.js", "eight.py"],
       },
     },
-    files: ["seven.php", "eight.php"],
+    files: ["nine.php", "ten.php"],
   },
   home: {
-    files: ["nine.js", "ten.ts"],
+    files: ["eleven.js", "twelve.ts"],
   },
-  files: ["eleven.py", "twelve.php"],
+  files: ["thirteen.py", "fourteen.php"],
 };
 
 console.log(fileSearcher(searchObject));
