@@ -1,6 +1,6 @@
 /*
 -----------------
-Problem statement
+PROBLEM STATEMENT
 -----------------
 
 Find out if 2 strings passed are anagrams:
@@ -12,7 +12,7 @@ Some examples of anagrams:
 "a gentleman" <--> "elegant man"
 
 -----------
-Explanation
+EXPLANATION
 -----------
 
 - To check whether two strings are anagrams, we first make sure both strings have the same length. If they don’t, they cannot be anagrams.
