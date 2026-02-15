@@ -18,7 +18,20 @@ NOte: This should've O(n) time complexity.
 -----------
 EXPLANATION
 -----------
+Say we have an array [1,2,3,4]
 
+To avoid brute force approach, we need to calculate 2 arrays.
+
+A preArray which consists of all the product of elements less than the current index:
+[ 1, 1, 2, 6 ]
+At each step: Multiply the element towards left with the preArray left element. This ensures the preArray at any point has product of all elements towards the left.
+
+
+A postArray which consists of all the product of elements greater than the current index:
+[ 24, 12, 4, 1 ]
+At each step: We does the same as pre-array but from te right.
+
+Now multipy both the elements
 */
 
 const product_of_elements_except_self = (arr: Array<number>) => {
