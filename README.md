@@ -1,6 +1,6 @@
 # Data Structures & Algorithms in TypeScript
 
-A complete Data Structures and Algorithms (DSA) refresher, fully implemented in TypeScript.
+A complete Data Structures and Algorithms (DSA) refresher, fully implemented in TypeScript and Python.
 This project is designed for learning, revision, and interview preparation, with clear implementations and practical problem-solving.
 
 ## Project Structure
