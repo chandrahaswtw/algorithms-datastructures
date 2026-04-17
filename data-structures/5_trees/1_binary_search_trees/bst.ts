@@ -76,4 +76,4 @@ node.addNode(24);
 // node.inOrderTraversal();
 // node.preOrderTraversal();
 // node.postOrderTraversal();
-// console.log(node.BFSTraversal());
+console.log(node.BFSTraversal());
