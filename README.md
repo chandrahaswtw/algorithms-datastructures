@@ -15,8 +15,8 @@ The full list of algorithms is available in this section.
 - Recursion
     - Factorial
     - File searcher problem
-    - Febinocci
-    - Febinocci with memoization
+    - Find substrings
+    - Array product sum
 - Search
     - Linear search
     - Binary search
@@ -24,24 +24,18 @@ The full list of algorithms is available in this section.
     - Bubble sort
     - Quick sort
     - Merge sort
-    - Insertion sort
 
 ### 2. Data Structures
 - Linked list
     - Singly linked list
-    - Double linked list
 - Stack
 - Queue
 - Hash map
+- Trees
+- Graphs
 
 
-Core data structures with clean, well-documented TypeScript implementations.
-
-The full list of data structures is available in this section.
-
-### 3. Daily Dose of Problems
-
-A curated set of problems to reinforce concepts through hands-on practice.
+Core data structures with clean, well-documented TypeScript and Python implementations.
 
 
 # Algorithm Complexity Guide (Time & Space)
